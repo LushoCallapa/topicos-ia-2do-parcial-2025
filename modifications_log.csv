@@ -1,0 +1,8 @@
+2025-10-28 17:32:14,"INSERT INTO queries (id, status, result) VALUES ('692dfd61-b50a-4557-a899-197187bbc6cd', 'pending', '')"
+2025-10-28 17:32:20,"UPDATE queries SET result='{""original_query"":""Which employee sold the most?"",""sql_queries"":[""SELECT employee_id, SUM(amount) as total_sales FROM sales GROUP BY employee_id ORDER BY total_sales DESC LIMIT 1;""],""agent_answer"":""The employee who sold the most is the one with employee_id 1, with total sales of 35013.6.""}' WHERE id='692dfd61-b50a-4557-a899-197187bbc6cd';"
+2025-10-28 17:38:52,"INSERT INTO employees (employee_name, department) VALUES ('Luis Callapa', 'Sales');"
+2025-10-28 17:50:56,"INSERT INTO employees (employee_name, department) VALUES ('Diego Ledezma', 'Sales');"
+2025-10-28 18:50:16,"INSERT INTO employees (employee_name, department) VALUES ('Ernesto', 'Sales');"
+2025-10-28 18:53:35,"INSERT INTO queries (id, status, result) VALUES ('f4e4d6d3-b984-4948-9f56-8d7489e71a26', 'pending', '')"
+2025-10-28 19:00:58,"INSERT INTO queries (id, status, result) VALUES ('2fd3e81d-f814-4ee0-8c95-d6e782a9db69', 'pending', '')"
+2025-10-28 19:01:05,"INSERT INTO queries (id, status, result) VALUES ('96a5b66f-f219-4bc1-b3b3-de8fb39534d2', 'pending', '')"

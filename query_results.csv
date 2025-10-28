@@ -1,0 +1,255 @@
+=== AUTO-SAVED Query at: 2025-10-28 17:32:15 ===
+"SQL: SELECT employee_id, SUM(amount) as total_sales FROM sales GROUP BY employee_id ORDER BY total_sales ..."
+1,35013.6
+
+=== AUTO-SAVED Query at: 2025-10-28 17:32:26 ===
+SQL: SELECT * FROM queries WHERE id = '692dfd61-b50a-4557-a899-197187bbc6cd'...
+692dfd61-b50a-4557-a899-197187bbc6cd,pending,"{""original_query"":""Which employee sold the most?"",""sql_queries"":[""SELECT employee_id, SUM(amount) as total_sales FROM sales GROUP BY employee_id ORDER BY total_sales DESC LIMIT 1;""],""agent_answer"":""The employee who sold the most is the one with employee_id 1, with total sales of 35013.6.""}"
+
+=== AUTO-SAVED Query at: 2025-10-28 17:35:56 ===
+SQL: SELECT * FROM employees WHERE department = 'Sales';...
+1,Alice Smith,Sales
+2,Bob Johnson,Sales
+
+=== AUTO-SAVED Query at: 2025-10-28 17:58:18 ===
+SQL: SELECT * FROM products;...
+1,Laptop,electronics
+2,Mouse,electronics
+3,Coffee Mug,kitchen
+4,Python Book,books
+5,Keyboard,electronics
+6,Blender,kitchen
+7,SQL for Dummies,books
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:37 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:38 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:40 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:40 ===
+SQL: SELECT * FROM employees WHERE employee_name != 'Ernesto';...
+1,Alice Smith,Sales
+2,Bob Johnson,Sales
+3,Charlie Lee,Support
+4,Luis Callapa,Sales
+5,Diego Ledezma,Sales
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:41 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:43 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:44 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:46 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:47 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:49 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:50 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:52 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:53 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:54 ===
+SQL: SELECT * FROM employees WHERE employee_name != 'Luis';...
+1,Alice Smith,Sales
+2,Bob Johnson,Sales
+3,Charlie Lee,Support
+4,Luis Callapa,Sales
+5,Diego Ledezma,Sales
+6,Ernesto,Sales
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:55 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:56 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:58 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:53:59 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:01 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:02 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:04 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:05 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:07 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:08 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:10 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:11 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:13 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:14 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:16 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:17 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:19 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:20 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:22 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:23 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:25 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:26 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:28 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:29 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:31 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:32 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:34 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:35 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:37 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:38 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:40 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:41 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:43 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:44 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:46 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 18:54:47 ===
+SQL: SELECT * FROM queries WHERE id = 'f4e4d6d3-b984-4948-9f56-8d7489e71a26'...
+f4e4d6d3-b984-4948-9f56-8d7489e71a26,pending,
+
+=== AUTO-SAVED Query at: 2025-10-28 19:00:32 ===
+SQL: SELECT COUNT(*) FROM employees WHERE department = 'ventas';...
+0
+
+=== AUTO-SAVED Query at: 2025-10-28 19:00:51 ===
+SQL: SELECT COUNT(*) FROM employees WHERE department = 'Sales';...
+5
+
+=== AUTO-SAVED Query at: 2025-10-28 19:00:58 ===
+SQL: SELECT COUNT(*) FROM employees WHERE department = 'ventas';...
+0
+
+=== AUTO-SAVED Query at: 2025-10-28 19:00:59 ===
+SQL: SELECT * FROM queries WHERE id = '2fd3e81d-f814-4ee0-8c95-d6e782a9db69'...
+2fd3e81d-f814-4ee0-8c95-d6e782a9db69,finished,"{""original_query"":""¿Cuántos empleados hay en el departamento de ventas?"",""sql_queries"":[""SELECT COUNT(*) FROM employees WHERE department = 'ventas';""],""agent_answer"":""No hay empleados en el departamento de ventas.""}"
+
+=== AUTO-SAVED Query at: 2025-10-28 19:01:05 ===
+SQL: SELECT COUNT(*) FROM employees WHERE department = 'Sales';...
+5
+
+=== AUTO-SAVED Query at: 2025-10-28 19:01:06 ===
+SQL: SELECT * FROM queries WHERE id = '96a5b66f-f219-4bc1-b3b3-de8fb39534d2'...
+96a5b66f-f219-4bc1-b3b3-de8fb39534d2,finished,"{""original_query"":""¿Cuántos empleados hay en el departamento de Sales?"",""sql_queries"":[""SELECT COUNT(*) FROM employees WHERE department = 'Sales';""],""agent_answer"":""Hay 5 empleados en el departamento de Sales.""}"

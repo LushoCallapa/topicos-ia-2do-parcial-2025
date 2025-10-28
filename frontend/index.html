@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>AI DB Assistant</title>
+<style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f6f8; margin: 0; padding: 0; }
+    header { background: #007BFF; color: white; padding: 20px; text-align: center; font-size: 1.8em; font-weight: bold; }
+    main { max-width: 900px; margin: 30px auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); }
+    textarea { width: 100%; padding: 10px; font-size: 1em; border-radius: 8px; border: 1px solid #ccc; resize: vertical; }
+    button { margin-top: 10px; padding: 10px 20px; font-size: 1em; background: #007BFF; color: white; border: none; border-radius: 8px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+    .result { margin-top: 20px; padding: 15px; border-radius: 10px; background: #f1f3f5; border-left: 5px solid #007BFF; }
+    .sql { color: #0d6efd; font-family: monospace; margin-bottom: 8px; }
+    .answer { color: #198754; font-weight: bold; }
+    .history { margin-top: 20px; padding: 10px; border-radius: 8px; background: #e9ecef; }
+    .history-item { margin-bottom: 10px; padding: 8px; border-left: 4px solid #6c757d; background: #fff; border-radius: 6px; }
+</style>
+</head>
+<body>
+
+<header>AI DB Assistant</header>
+<main>
+
+<h2>Consulta Síncrona</h2>
+<textarea id="sync-query" placeholder="Escribe tu consulta aquí..."></textarea>
+<br>
+<button onclick="sendSyncQuery()">Enviar</button>
+<div id="sync-result" class="result"></div>
+
+<h2>Consulta Asíncrona</h2>
+<textarea id="async-query" placeholder="Escribe tu consulta aquí..."></textarea>
+<br>
+<button onclick="sendAsyncQuery()">Enviar Async</button>
+<div id="async-result" class="result"></div>
+
+<h2>Historial de Consultas</h2>
+<div id="history" class="history"></div>
+
+<script>
+let queryHistory = [];
+
+async function sendSyncQuery() {
+    const query = document.getElementById("sync-query").value;
+    const resDiv = document.getElementById("sync-result");
+    resDiv.innerHTML = "Procesando...";
+
+    try {
+        const response = await fetch("http://127.0.0.1:8000/database/natural_queries", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ user_query: query })
+        });
+        const data = await response.json();
+        displayResult(data, resDiv);
+        addToHistory(query, data);
+    } catch (err) {
+        resDiv.innerHTML = "Error: " + err.message;
+    }
+}
+
+async function sendAsyncQuery() {
+    const query = document.getElementById("async-query").value;
+    const resDiv = document.getElementById("async-result");
+    resDiv.innerHTML = "Enviando consulta...";
+
+    try {
+        const startRes = await fetch("http://127.0.0.1:8000/database/async_queries", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ user_query: query })
+        });
+        const startData = await startRes.json();
+        const queryId = startData.query_id;
+        resDiv.innerHTML = "Consulta enviada. Esperando resultado...";
+
+        const interval = setInterval(async () => {
+            const checkRes = await fetch(`http://127.0.0.1:8000/database/async_queries?query_id=${queryId}`);
+            const checkData = await checkRes.json();
+            if (checkData.status === "finished") {
+                clearInterval(interval);
+                displayResult(checkData, resDiv);
+                addToHistory(query, checkData);
+            }
+        }, 1500);
+    } catch (err) {
+        resDiv.innerHTML = "Error: " + err.message;
+    }
+}
+
+function displayResult(data, container) {
+    container.innerHTML = "";
+    if (data.sql_queries && data.sql_queries.length) {
+        const sqlDiv = document.createElement("div");
+        sqlDiv.className = "sql";
+        sqlDiv.innerHTML = "<strong>SQL Generado:</strong><br>" + data.sql_queries.join("<br>");
+        container.appendChild(sqlDiv);
+    }
+    const answerDiv = document.createElement("div");
+    answerDiv.className = "answer";
+    answerDiv.innerHTML = "<strong>Respuesta del agente:</strong><br>" + data.agent_answer;
+    container.appendChild(answerDiv);
+}
+
+function addToHistory(query, data) {
+    queryHistory.push({ query, data });
+    const historyDiv = document.getElementById("history");
+    historyDiv.innerHTML = "";
+    queryHistory.slice().reverse().forEach(item => {
+        const div = document.createElement("div");
+        div.className = "history-item";
+        div.innerHTML = `<strong>Consulta:</strong> ${item.query}<br>
+                         <strong>Respuesta:</strong> ${item.data.agent_answer}`;
+        historyDiv.appendChild(div);
+    });
+}
+</script>
+
+</main>
+</body>
+</html>
